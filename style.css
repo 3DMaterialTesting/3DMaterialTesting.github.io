@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar{
+	background: #222629;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: Left;
+	padding: 1%;
+	align-items: center;
+	font-size: 1.9rem;
+	font-weight: bold;
+
+
+}
+
+.logo{
+	width: 30%;
+}
+
+#navbar__logo {
+	background-color: rgb(5, 29, 49);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.sidebar{
+	background:  #222629;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 15%;
+	height: 100%;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
+}
+
+#sidebar__logo{
+	color: #e2ca92;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sidebar ul li a{
+	display: block;
+	padding: 5% 5%;
+	justify-content: center;
+	border-bottom: 0px solid rgb(5, 29, 49);
+	color: rgb(241,237,237);
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    color: rgb(5, 29, 49);
+
+    background: #e2ca92;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
+    display: block;
+}
+
+.materialbar{
+	background:  rgb(135, 188, 192);
+	position: fixed;
+	top: 100px;
+	left: 15%;
+	width: 100%;
+	height: 100px;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
+}
+
+
+
+
+.dropdown-container {
+	display: flex;
+	justify-content: left;
+  }
+  
+  .dropdown-wrapper {
+	margin: 1% 2%;
+	text-align: center;
+  }
+  
+  .dropdown-menu {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding: 5px 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+  }
+  
+  .dropdown-menu option {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding: 5px 10px;
+	background-color: #fff;
+	color: #333;
+  }
+  
+  .dropdown-wrapper label {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+  }
+
+  .subBtn {
+	display: block;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #222629;
+	border: none;
+	cursor:pointer;
+  }
+
+.plot_list {
+	background:  rgb(211, 211, 211);
+	position: fixed;
+	top: 200px;
+	left: 80%;
+	width: 100%;
+	height: 100%;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
+}
+
+.shape_container li {
+	padding: 1%;
+	background: #8a8c8d;
+}
+
+
+.plotCanvas {
+
+	display: block;
+	box-sizing: border-box;
+	height: 600px;
+	position:fixed;
+	right: 20%;
+	left:16%;
+	top: 200px;
+	width: calc(100% - 36%);
+}
+
+@media screen and (max-width: 768px) {
+	.plotCanvas {
+	  left: 0;
+	  right: 0;
+	  width: 100%;
+	}
+}
+.plotCards {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  width: 20%;
+  height: calc(100% - 200px); /* Adjust height to fit remaining space */
+  background-color: #d1e2e1; /* Replace with desired background color */
+  text-align: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+  }
+
+.card {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	padding-right: 20px;
+	text-align: center;
+	background-color: #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+  .delBtn {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding: 5;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	background-color: #f1f1f1;
+	cursor:pointer;
+  }
+
+  .mainBody {
+	display: block;
+	box-sizing: border-box;
+	height: 600px;
+	position:fixed;
+	right: 0%;
+	left:16%;
+	top: 100;
+	width: calc(100% - 36%);
+}
